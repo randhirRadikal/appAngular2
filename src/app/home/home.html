@@ -1,0 +1,78 @@
+<div class="container">
+	<div style="text-align:center">
+	  <h1>
+		Welcome to {{title}}!
+	  </h1>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="row">
+				<a href="javascript:void(0);" (click)="openMenu('home');">
+					<img src="./assets/images/home.png" />
+				</a>
+				<a href="javascript:void(0);" (click)="openMenu('facebook');">
+					<img src="./assets/images/facebook.png" />
+				</a>
+				<img src="./assets/images/more.png" />
+				<img src="./assets/images/order.png" />
+				<img src="./assets/images/social.png" />
+			</div>
+			<div class="homeWeb" *ngIf="viewPage.homePage">
+				<div class="row">
+					<h4>Home</h4>
+				</div>
+			</div>
+			<div class="facebookWeb" *ngIf="viewPage.facebook">
+				<div class="row">
+					<h4>Facebook</h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<img src="./assets/images/mobile.png" />
+			<div class="appCss" style="background-image: url('./assets/images/background.png');">
+				<div class="container">
+					<div class="row" style="margin-top: 302px;margin-left: -11px;" >
+						<div class="">
+							<a href="javascript:void(0);" (click)="openMenu('home');">
+								<img src="./assets/images/home.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('facebook');">
+								<img src="./assets/images/facebook.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('more');">
+								<img src="./assets/images/more.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('order');">
+								<img src="./assets/images/order.png" style="width:75px; height:75px;"/>
+							</a>
+						</div>
+						<div style="margin-top: 6px;">
+							<a href="javascript:void(0);" (click)="openMenu('home');">
+								<img src="./assets/images/home.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('facebook');">
+								<img src="./assets/images/facebook.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('more');">
+								<img src="./assets/images/more.png" style="width:75px; height:75px;"/>
+							</a>
+							<a href="javascript:void(0);" (click)="openMenu('order');">
+								<img src="./assets/images/order.png" style="width:75px; height:75px;"/>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="row">
+		<div *ngFor="let hero of home">
+			{{hero.name}}
+		</div>
+	</div> -->
+</div>
